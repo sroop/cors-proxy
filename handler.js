@@ -32,6 +32,7 @@ module.exports.corsProxy = (event, context, callback) => {
         request({
             url: params.url,
             method: event.httpMethod,
+            Accept: 'image/jpeg',
             encoding: null,
             timeout: 20000
         }, (err, originalResponse) => {
