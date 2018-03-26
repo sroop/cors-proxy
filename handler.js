@@ -55,7 +55,7 @@ module.exports.corsProxy = (event, context, callback) => {
                     "content-type": originalResponse.headers['content-type']
                 },
                 isBase64Encoded: true,
-                body: originalResponse.body
+                body: originalResponse.body.toString('base64')
             };
 
             callback(null, proxyResponse);
