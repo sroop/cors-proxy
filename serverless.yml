@@ -1,4 +1,4 @@
-service: cors-proxy
+service: cors-proxy-sroop
 
 plugins:
   - serverless-offline
@@ -8,7 +8,7 @@ provider:
   runtime: nodejs6.10
   timeout: 60
   stage: dev
-  region: eu-central-1
+  region: us-west-1
   environment:
     foo: 123
 
